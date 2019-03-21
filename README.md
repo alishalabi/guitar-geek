@@ -26,3 +26,6 @@ Milestones:
 - Implement user authentication
 - Customize user page
 - Allow users to CRUD their own song resources
+
+Inspirations:
+- Neon effects: https://codepen.io/FelixRilling/pen/qzfoc
