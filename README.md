@@ -12,9 +12,10 @@ Languages:
 
 Back-end dependencies:
 - Node.js / Npm
-- Express `npm install express`
-- Express Handlebars `npm install express-handlebars`
-- Mongoose `npm install mongoose`
+- Express - `npm install express`
+- Express Handlebars - `npm install express-handlebars`
+- Mongoose - `npm install mongoose`
+- Pitchy - `npm install pitchy`
 
 Milestones:
 - Create shell node project

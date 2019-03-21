@@ -2,6 +2,7 @@
 const express = require("express")
 const exphbs = require("express-handlebars")
 const mongoose = require("mongoose")
+const pitchy = require("pitchy")
 
 
 // Instantiate Express (Must be after middleware requirements)
@@ -10,10 +11,20 @@ const app = express()
 // Integrating Middleware
 app.engine('handlebars', exphbs({ defaultLayout: 'main' }))
 app.set('view engine', 'handlebars')
+app.use(express.static('public'))
 
 // Render Root Route
 app.get("/", (req, res) => {
   res.render("homepage")
+})
+
+app.get("/tools", (req, res) => {
+  res.render("tools")
+})
+
+
+app.get("/tuner", (req, res) => {
+  res.render("tuner")
 })
 
 app.listen(process.env.PORT || 3000, (req, res) => {
