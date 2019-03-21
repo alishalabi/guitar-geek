@@ -22,7 +22,7 @@ function updatePitch(analyserNode, sampleRate) {
   displayPitch.style.backgroundColor = `rgb(0, ${pitch}, 0)`
 
   displayClarity.textContent = String(clarity)
-  displayClarity.style.width = `${pitch}px`
+  displayClarity.style.width = `${clarity}px`
   displayClarity.style.backgroundColor = `rgb(${clarity}, 0, 0)`
 
 

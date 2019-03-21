@@ -168,6 +168,10 @@ a {
     0 0 55px var(--main-yellow),
     0 0 75px var(--main-yellow);
 }
+
+.tool-window {
+  background-color: white;
+}
 /* End All Tool Section */
 
 
