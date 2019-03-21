@@ -1,10 +1,13 @@
+/* Begin Global Varibale Section */
 :root {
-  --homepage-grey-black: #40403d;
+  --homepage-grey-black: #111111;
   --main-white: #fcfcfc;
   --main-pink: #ff0080;
   --main-blue: #32E2F1;
   --main-yellow: #FFE80F;
   --main-purple: #8C12FB;
+  --main-green: #49fb35;
+  --main-orange: #FF6700;
 }
 
 body {
@@ -18,6 +21,7 @@ a {
   -moz-transition: all 0.5s;
   transition: all 0.5s;
 }
+/* End Global Variable Section */
 
 
 /* Begin Navbar Section */
@@ -42,7 +46,7 @@ a {
 }
 
 .navbar li a:hover:not(.active) {
-  background-color: #40403d;
+  background-color: #404949;
 }
 
 .navbar .active {
@@ -84,14 +88,15 @@ a {
   width: 50vw;
   padding: 5vh;
   border-style: solid;
-  border-width: 10px;
-  border-color: var(--main-white)
+  border-width: 5px;
+  border-color: var(--main-white);
+  background-color: #2d2d2c;
 }
 
 .welcome-options {
   display: grid;
   grid-template-columns: auto auto;
-  padding: 20px;
+  padding: 50px;
   margin: auto;
   padding-top: 0;
 }
@@ -105,7 +110,7 @@ a {
     -1px 1px 0 var(--main-white),
     1px 1px 0 var(--main-white); */
 
-  color: black;
+  color: var(--main-white);
   font-family: Monoton;
   -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
   -moz-animation: neon1 1.5s ease-in-out infinite alternate;
@@ -118,4 +123,151 @@ a {
   -moz-animation: none;
   animation: none;
 }
+
+.welcome-options .blue h3:hover {
+  color: var(--main-blue);
+  -webkit-animation: none;
+  -moz-animation: none;
+  animation: none;
+}
+
+.welcome-options .green h3:hover {
+  color: var(--main-green);
+  -webkit-animation: none;
+  -moz-animation: none;
+  animation: none;
+}
+
+.welcome-options .orange h3:hover {
+  color: var(--main-orange);
+  -webkit-animation: none;
+  -moz-animation: none;
+  animation: none;
+}
 /* End Homepahe Section */
+
+
+/* Begin All Tool Section */
+.tool-page {
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--homepage-grey-black);
+}
+
+.tool-page h1 {
+  margin: 0;
+  padding: 10vh;
+  font-family: 'Bangers', cursive;
+  font-size: 8rem;
+  text-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px var(--main-yellow),
+    0 0 30px var(--main-yellow),
+    0 0 40px var(--main-yellow),
+    0 0 55px var(--main-yellow),
+    0 0 75px var(--main-yellow);
+}
+/* End All Tool Section */
+
+
+
+/* Begin Tuner Section */
+.tuner-page {
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--homepage-grey-black);
+}
+
+.tuner-page h1 {
+  margin: 0;
+  padding: 10vh;
+  font-family: 'Bangers', cursive;
+  font-size: 8rem;
+  text-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px var(--main-blue),
+    0 0 30px var(--main-blue),
+    0 0 40px var(--main-blue),
+    0 0 55px var(--main-blue),
+    0 0 75px var(--main-blue);
+}
+
+.tuner-window {
+  color: var(--main-white);
+  text-align: center;
+  margin: auto;
+  width: 50vw;
+  padding: 10px;
+  border-style: solid;
+  border-width: 5px;
+  border-color: var(--main-white);
+  background-color: #2d2d2c;
+  font-family: 'Roboto', sans-serif;
+  padding-bottom: 20px;
+
+}
+
+.tuner-window h3 {
+  font-size: 4rem;
+}
+
+.tuner-window span {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+#current {
+  font-size: 3rem;
+}
+/* End Tuner Section */
+
+
+/* Beging Visualizer Section  */
+.visualizer-page {
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--homepage-grey-black);
+}
+
+.visualizer-page h1 {
+  margin: 0;
+  padding: 10vh;
+  font-family: 'Bangers', cursive;
+  font-size: 8rem;
+  text-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px var(--main-green),
+    0 0 30px var(--main-green),
+    0 0 40px var(--main-green),
+    0 0 55px var(--main-green),
+    0 0 75px var(--main-green);
+}
+/* End Visualizer Section */
+
+
+
+/* Begin Sheet Music Section */
+.sheet-page {
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--homepage-grey-black);
+}
+
+.sheet-page h1 {
+  margin: 0;
+  padding: 10vh;
+  font-family: 'Bangers', cursive;
+  font-size: 8rem;
+  text-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px var(--main-orange),
+    0 0 30px var(--main-orange),
+    0 0 40px var(--main-orange),
+    0 0 55px var(--main-orange),
+    0 0 75px var(--main-orange);
+}
+/* End Sheet Music Section */

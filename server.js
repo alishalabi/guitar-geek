@@ -27,6 +27,14 @@ app.get("/tuner", (req, res) => {
   res.render("tuner")
 })
 
+app.get("/visualizer", (req, res) => {
+  res.render("visualizer")
+})
+
+app.get("/sheet", (req, res) => {
+  res.render("sheet")
+})
+
 app.listen(process.env.PORT || 3000, (req, res) => {
   console.log("Listening at port 3000!")
 })
