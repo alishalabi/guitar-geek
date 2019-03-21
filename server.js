@@ -12,6 +12,8 @@ const app = express()
 app.engine('handlebars', exphbs({ defaultLayout: 'main' }))
 app.set('view engine', 'handlebars')
 app.use(express.static('public'))
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/guitar-geek', { useNewUrlParser: true });
+
 
 // Render Root Route
 app.get("/", (req, res) => {
