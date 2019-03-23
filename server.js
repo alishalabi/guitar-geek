@@ -37,6 +37,10 @@ app.get("/sheet", (req, res) => {
   res.render("sheet")
 })
 
+app.get("/sandbox", (req, res) => {
+  res.render("sandbox")
+})
+
 app.listen(process.env.PORT || 3000, (req, res) => {
   console.log("Listening at port 3000!")
 })

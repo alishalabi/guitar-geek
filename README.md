@@ -29,3 +29,6 @@ Milestones:
 
 Inspirations:
 - Neon effects: https://codepen.io/FelixRilling/pen/qzfoc
+
+Code References:
+- The entire pitch-to-chord.js file utilized is from https://github.com/lvreynoso/voiceboxx/
