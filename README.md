@@ -31,4 +31,4 @@ Inspirations:
 - Neon effects: https://codepen.io/FelixRilling/pen/qzfoc
 
 Code References:
-- The entire pitch-to-chord.js file utilized is from https://github.com/lvreynoso/voiceboxx/
+- Guitar Tuner: https://github.com/citronneur/onlinetuner.co/blob/master/js/onlinetuner.js

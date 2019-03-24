@@ -1,30 +1,12 @@
-<div class="tuner-page">
-  <div class="tune-title">
-    <h1 class="tuner-blue">Tuner</h1>
-  </div>
-  <div class="tuner-window">
-    <div class="tuner-current-reading">
-      <h3>Current Reading</h3>
-    </div>
-    <div class="tuner-chord-display">
-        <!-- <span id="flat">Eb</span>
-        <span id="current">E</span>
-        <span id="sharp">E#</span> -->
-        <canvas id="guitar-tuner" height="200"></canvas>
-    </div>
-  </div>
+// Inspired by tutorial: https://ourcodeworld.com/articles/read/556/implementing-a-live-guitar-tuner-in-javascript-with-onlinetuner-co
+import { OnlineTuner } from "/scripts/tuner.js"
 
-</div>
-
-
-
-<script>
-    var Settings = {
+var Settings = {
         container: document.getElementById("guitar-tuner"),
-        backgroundColor: "#2d2d2c", // or hex colors "#ffffff"
-        notOkayColor: "#FF6700",
-        okayColor: "#228B22",
-        fontColor: "#fcfcfc"
+        backgroundColor: "white", // or hex colors "#ffffff"
+        notOkayColor: "orange",
+        okayColor: "green",
+        fontColor: "black"
     };
 
 	function initializeTuner() {
@@ -50,6 +32,5 @@
 		});
 	}
 
-    // Render the guitar tuner on the canvas by running the function
-    initializeTuner();
-</script>
+  // Render the guitar tuner on the canvas by running the function
+  initializeTuner()

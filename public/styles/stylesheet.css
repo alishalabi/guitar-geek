@@ -1,6 +1,7 @@
 /* Begin Global Varibale Section */
 :root {
   --homepage-grey-black: #111111;
+  --window-grey: #2d2d2c;
   --main-white: #fcfcfc;
   --main-pink: #ff0080;
   --main-blue: #32E2F1;
@@ -22,6 +23,14 @@ a {
   transition: all 0.5s;
 }
 /* End Global Variable Section */
+
+
+/* Begin Canvas Section */
+canvas {
+  display: block;
+  z-index: 2;
+}
+/* End Canvas Section */
 
 
 /* Begin Navbar Section */
@@ -57,7 +66,7 @@ a {
 
 /* Begin Homepage Section */
 .homepage {
-  height: 100vh;
+  height: 100%;
   width: 100vw;
   background-color: var(--homepage-grey-black);
 }
@@ -91,6 +100,7 @@ a {
   border-width: 5px;
   border-color: var(--main-white);
   background-color: #2d2d2c;
+  margin-bottom: 10vh;
 }
 
 .welcome-options {
@@ -238,8 +248,8 @@ a {
 
 /* Begin Tuner Section */
 .tuner-page {
-  height: 100vh;
-  width: 100vw;
+  height: 2000px;
+  width: 100%;
   background-color: var(--homepage-grey-black);
 }
 
@@ -263,6 +273,7 @@ a {
   text-align: center;
   margin: auto;
   width: 50vw;
+  height: 70vh;
   padding: 10px;
   border-style: solid;
   border-width: 5px;
@@ -277,9 +288,13 @@ a {
   font-size: 4rem;
 }
 
-.tuner-window span {
-  padding-left: 50px;
-  padding-right: 50px;
+.tuner-window canvas {
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 300px;
 }
 
 #current {
