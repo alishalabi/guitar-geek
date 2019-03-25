@@ -5,10 +5,11 @@
 var analyser, canvas, ctx;
 
 window.onload = function() {
-  canvas = document.createElement("canvas")
+  canvas = document.getElementById("visualizer-record-canvas")
+  console.log(canvas)
   canvas.width = window.innerWidth
-  canvas.height = window.innerHeight
-  document.body.appendChild(canvas)
+  canvas.height = "500"
+  // document.body.appendChild(canvas)
   ctx = canvas.getContext("2d")
 
   // request permission to access audio stream
@@ -36,7 +37,7 @@ window.onload = function() {
       setTimeout(() => {
           // this will trigger one final 'ondataavailable' event and set recorder state to 'inactive'
           recorder.stop();
-      }, 10000);
+      }, 15000);
     }).catch(console.error);
 }
 

@@ -4,7 +4,7 @@ var analyser, canvas, ctx;
 
 
 window.onload = function() {
-  canvas = document.getElementById("visualizer-canvas")
+  canvas = document.getElementById("visualizer-sample-canvas")
   console.log(canvas)
   canvas.width = window.innerWidth
   canvas.height = "500"
