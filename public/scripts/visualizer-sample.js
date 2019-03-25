@@ -2,11 +2,13 @@
 
 var analyser, canvas, ctx;
 
+
 window.onload = function() {
-  canvas = document.createElement("canvas")
+  canvas = document.getElementById("visualizer-canvas")
+  console.log(canvas)
   canvas.width = window.innerWidth
   canvas.height = window.innerHeight
-  document.body.appendChild(canvas)
+  // document.body.appendChild(canvas)
   ctx = canvas.getContext("2d")
 
   setupWebAudio()
@@ -14,11 +16,11 @@ window.onload = function() {
 }
 
 function setupWebAudio() {
-  const audio = document.createElement("audio")
-  audio.src = "/assets/accoustic-guitar.mp3"
-  audio.controls = "true"
-  document.body.appendChild(audio)
-  audio.style.width = window.innerWidth + "px"
+  // const audio = document.createElement("audio")
+  // audio.src = "/assets/accoustic-guitar.mp3"
+  // audio.controls = "true"
+  // document.body.appendChild(audio)
+  // audio.style.width = window.innerWidth + "px"
 
   const audioContext = new AudioContext()
   analyser = audioContext.createAnalyser()

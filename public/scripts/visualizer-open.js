@@ -11,27 +11,12 @@ window.onload = function() {
   document.body.appendChild(canvas)
   ctx = canvas.getContext("2d")
 
-  // request permission to access audio stream
-  navigator.mediaDevices.getUserMedia({ audio: true }).then(stream => {
-      // store streaming data chunks in array
-      const chunks = [];
-      // create media recorder instance to initialize recording
-      const recorder = new MediaRecorder(stream);
-      // function to be called when data is received
-      recorder.ondataavailable = e => {
-        // add stream data to chunks
-        chunks.push(e.data);
-        // if recorder is 'inactive' then recording has finished
-        if (recorder.state == 'inactive') {
-            // convert blob to URL so it can be assigned to a audio src attribute
-
-        }
-      };
-      // start recording with 1 second time between receiving 'ondataavailable' events
-      recorder.start(1000);
-      // setTimeout to stop recording after 4 seconds
-    }).catch(console.error);
-    setupWebAudio();
+  navigator.mediaDevices.getUserMedia({ audio: true })
+  .then(stream => {
+    const mediaRecorder = new MediaRecorder(stream);
+    mediaRecorder.start();
+  });
+    // setupWebAudio();
     draw()
 }
 
