@@ -30,6 +30,7 @@ app.get("/tuner", (req, res) => {
 })
 
 app.get("/visualizer", (req, res) => {
+  // res.render("visualizer")
   res.render("visualizer-sample")
 })
 

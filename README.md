@@ -32,6 +32,7 @@ Milestones:
 
 Inspirations:
 - Neon effects: https://codepen.io/FelixRilling/pen/qzfoc
+- Microphone Objects: https://air.ghost.io/recording-to-an-audio-file-using-html5-and-js/
 
 Code References:
 - Guitar Tuner: https://github.com/citronneur/onlinetuner.co/blob/master/js/onlinetuner.js
