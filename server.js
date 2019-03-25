@@ -30,8 +30,20 @@ app.get("/tuner", (req, res) => {
 })
 
 app.get("/visualizer", (req, res) => {
-  res.render("visualizer")
+  res.render("visualizer-options")
   // res.render("visualizer-sample")
+})
+
+app.get("/visualizer-sample", (req, res) => {
+  res.render("visualizer-sample")
+})
+
+app.get("/visualizer-record", (req, res) => {
+  res.render("visualizer-record")
+})
+
+app.get("/visualizer-open", (req, res) => {
+  res.render("visualizer-open")
 })
 
 app.get("/sheet", (req, res) => {
@@ -42,9 +54,6 @@ app.get("/sandbox", (req, res) => {
   res.render("sandbox")
 })
 
-app.get("/visualizer-sample", (req, res) => {
-  res.render("visualizer-sample")
-})
 
 app.listen(process.env.PORT || 3000, (req, res) => {
   console.log("Listening at port 3000!")

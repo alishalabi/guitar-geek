@@ -36,7 +36,7 @@ window.onload = function() {
       setTimeout(() => {
           // this will trigger one final 'ondataavailable' event and set recorder state to 'inactive'
           recorder.stop();
-      }, 20000);
+      }, 10000);
     }).catch(console.error);
 }
 
