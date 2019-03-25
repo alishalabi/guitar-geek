@@ -248,7 +248,7 @@ canvas {
 
 /* Begin Tuner Section */
 .tuner-page {
-  height: 2000px;
+  height: 100%;
   width: 100%;
   background-color: var(--homepage-grey-black);
 }
@@ -281,7 +281,7 @@ canvas {
   background-color: #2d2d2c;
   font-family: 'Roboto', sans-serif;
   padding-bottom: 20px;
-
+  margin-bottom: 15vh;
 }
 
 .tuner-window h3 {
@@ -324,6 +324,10 @@ canvas {
     0 0 55px var(--main-green),
     0 0 75px var(--main-green);
 }
+
+/* #visualizer-canvas {
+  height: 500px;
+} */
 /* End Visualizer Section */
 
 

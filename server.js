@@ -30,7 +30,7 @@ app.get("/tuner", (req, res) => {
 })
 
 app.get("/visualizer", (req, res) => {
-  res.render("visualizer")
+  res.render("visualizer-sample")
 })
 
 app.get("/sheet", (req, res) => {
@@ -39,6 +39,10 @@ app.get("/sheet", (req, res) => {
 
 app.get("/sandbox", (req, res) => {
   res.render("sandbox")
+})
+
+app.get("/visualizer-sample", (req, res) => {
+  res.render("visualizer-sample")
 })
 
 app.listen(process.env.PORT || 3000, (req, res) => {

@@ -15,7 +15,10 @@ Back-end dependencies:
 - Express - `npm install express`
 - Express Handlebars - `npm install express-handlebars`
 - Mongoose - `npm install mongoose`
-- Pitchy - `npm install pitchy`
+
+Front-end dependencies:
+- Online tuner
+- P5.js
 
 Milestones:
 - Create shell node project

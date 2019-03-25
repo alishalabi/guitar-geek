@@ -1,43 +1,14 @@
-<!-- <div id="pitch">
-</div>
-
-<div id="clarity">
-</div> -->
-
-<canvas id="guitar-tuner" height="300"></canvas>
-
 <script>
-    var Settings = {
-        container: document.getElementById("guitar-tuner"),
-        backgroundColor: "white", // or hex colors "#ffffff"
-        notOkayColor: "orange",
-        okayColor: "green",
-        fontColor: "black"
-    };
+  var mic;
 
-	function initializeTuner() {
-        // Create a single or multiple instance of tuners at time
-		var tuners = [
-			new OnlineTuner.Controller.GuitareTuner(
-                new OnlineTuner.Widget.CircleWidget(
-                    Settings.container,
-                    Settings.backgroundColor,
-                    Settings.notOkayColor,
-                    Settings.okayColor,
-                    Settings.fontColor
-                )
-            )
-		];
+  function setup() {
+    mic = new p5.AudioIn();
+    mic.start;
+  }
 
-        // Initialize the tuner with the callbacks
-		new OnlineTuner.Analyser(tuners).install(function() {
-            console.log("Succesfully initialized");
+  function draw() {
 
-		}, function(errorMessage) {
-            console.error("Oops, this shouldn't happen", errorMessage);
-		});
-	}
+  }
 
-    // Render the guitar tuner on the canvas by running the function
-    initializeTuner();
+  console.log("simple")
 </script>
