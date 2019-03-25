@@ -1,3 +1,7 @@
+// Visualization inspired by: https://www.youtube.com/watch?v=QWbdYmeAQEY
+// Microphone object inspired by: https://air.ghost.io/recording-to-an-audio-file-using-html5-and-js/
+
+
 var analyser, canvas, ctx;
 
 window.onload = function() {

@@ -30,8 +30,8 @@ app.get("/tuner", (req, res) => {
 })
 
 app.get("/visualizer", (req, res) => {
-  // res.render("visualizer")
-  res.render("visualizer-sample")
+  res.render("visualizer")
+  // res.render("visualizer-sample")
 })
 
 app.get("/sheet", (req, res) => {

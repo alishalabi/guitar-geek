@@ -1,3 +1,5 @@
+// Visualization inspired by: https://www.youtube.com/watch?v=QWbdYmeAQEY
+
 var analyser, canvas, ctx;
 
 window.onload = function() {
