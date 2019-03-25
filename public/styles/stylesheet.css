@@ -305,9 +305,12 @@ canvas {
 
 /* Beging Visualizer Section  */
 .visualizer-page {
-  height: 120vh;
+  height: 100vh;
   width: 100vw;
   background-color: var(--homepage-grey-black);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .visualizer-green {

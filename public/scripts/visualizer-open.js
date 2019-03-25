@@ -14,29 +14,51 @@ window.onload = function() {
   navigator.mediaDevices.getUserMedia({ audio: true })
   .then(stream => {
     const mediaRecorder = new MediaRecorder(stream);
-    mediaRecorder.start();
+    mediaRecorder.ondataavailable = e => {
+      // setupWebAudio()
+      draw(stream)
+    }
+    mediaRecorder.start(1000);
   });
     // setupWebAudio();
-    draw()
+
 }
 
 function setupWebAudio() {
-  const audioEl = document.createElement('audio');
-  // const sourceEl = document.createElement('source');
-  // sourceEl.src = blobUrl;
-  // sourceEl.type = 'audio/webm';
-  // audioEl.appendChild(sourceEl);
-  document.body.appendChild(audioEl);
+  // const audioEl = document.createElement('audio');
+  // // const sourceEl = document.createElement('source');
+  // // sourceEl.src = blobUrl;
+  // // sourceEl.type = 'audio/webm';
+  // // audioEl.appendChild(sourceEl);
+  // document.body.appendChild(audioEl);
 
   const audioContext = new AudioContext()
   analyser = audioContext.createAnalyser()
-  const source = audioContext.createMediaElementSource(audioEl)
+  const source = audioContext.createMediaElementSource(stream)
   source.connect(analyser)
   analyser.connect(audioContext.destination)
 
 }
 
-function draw() {
+function draw(stream) {
+  // const audioEl = document.createElement('audio');
+  // // const sourceEl = document.createElement('source');
+  // // sourceEl.src = blobUrl;
+  // // sourceEl.type = 'audio/webm';
+  // // audioEl.appendChild(sourceEl);
+  // document.body.appendChild(audioEl);
+
+  const audioContext = new AudioContext()
+
+  analyser = audioContext.createAnalyser()
+  var myAudio = document.querySelector('audio');
+  var mediaSource = audioContext.createMediaElementSource(myAudio);
+
+  // const mediaStream = new MediaStream(stream)
+  const source = audioContext.createMediaElementSource(mediaSource)
+  source.connect(analyser)
+  analyser.connect(audioContext.destination)
+
   requestAnimationFrame(draw);
   const freqByteData = new Uint8Array(analyser.frequencyBinCount)
   analyser.getByteFrequencyData(freqByteData)
