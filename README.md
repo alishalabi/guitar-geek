@@ -18,17 +18,12 @@ Back-end dependencies:
 
 Front-end dependencies:
 - Online tuner
-- P5.js
 
 Milestones:
 - Create shell node project
 - Have server register audio input from microphone
-- Populate database of chord references (audio)
-- Have server differentiate between references
+- Have server differentiate between chords
 - Have front-end display information about audio samples
-- Implement user authentication
-- Customize user page
-- Allow users to CRUD their own song resources
 
 Inspirations:
 - Neon effects: https://codepen.io/FelixRilling/pen/qzfoc
