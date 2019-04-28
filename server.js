@@ -46,12 +46,21 @@ app.get("/visualizer-open", (req, res) => {
   res.render("visualizer-open")
 })
 
-app.get("/sheet", (req, res) => {
-  res.render("sheet")
-})
+// app.get("/sheet", (req, res) => {
+//   res.render("sheet")
+// })
 
-app.get("/sandbox", (req, res) => {
-  res.render("sandbox")
+// app.get("/sandbox", (req, res) => {
+//   res.render("sandbox")
+// })
+
+let songs = [
+  { title: "Wagon Wheel", youtubeUrl: "https://www.youtube.com/watch?v=zx3Tv5uBAaE"},
+  { title: "No Woman No Cry", youtubeUrl: "https://www.youtube.com/watch?v=7lasK3XSICc"}
+]
+
+app.get('/songs', (req, res) => {
+  res.render('songs-index', { songs: songs });
 })
 
 
