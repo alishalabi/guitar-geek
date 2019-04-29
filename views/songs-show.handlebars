@@ -1,0 +1,9 @@
+<h1>{{song.title}}</h1>
+<h2><a href="{{song.youtubeUrl}}" target="_blank">Youtube Tutorial</a></h2>
+<h2><a href="{{song.tabUrl}}" target="_blank">Guitar Tabs</a></h2>
+
+<h3><a href="/songs/{{song._id}}/edit">Edit Song</a></h3>
+<h3><a href="/songs">Back To Song Index</a></h3>
+<h4><form method="POST" action="/songs/{{song._id}}?_method=DELETE">
+    <button type="submit">Delete Song</button>
+</form></h4>

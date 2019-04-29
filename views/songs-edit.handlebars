@@ -1,10 +1,9 @@
-<form method="POST" action="/songs">
+<form method="POST" action="/songs/{{song._id}}?_method=PUT">
 
-  <h2>New Song</h2>
+  <h2>Edit Song</h2>
   {{>songs-form}}
   <!-- BUTTON -->
   <p>
     <button type="submit">Save Song</button>
   </p>
-
 </form>
