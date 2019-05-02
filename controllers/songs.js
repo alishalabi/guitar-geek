@@ -47,7 +47,7 @@ module.exports = function(app) {
   // HTTP: Update Song
   app.put('/songs/:id', (req, res) => {
     Song.findByIdAndUpdate(req.params.id, req.body)
-      .then(review => {
+      .then(song => {
         res.redirect(`/songs/${song._id}`)
       }).catch(err => {
         console.log(err.message)

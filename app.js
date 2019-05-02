@@ -20,6 +20,7 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/guitar-geek', {
 
 // Integrating Controllers
 const songs = require('./controllers/songs.js')(app)
+const users = require('./controllers/users.js')(app)
 
 // Render Root Route
 app.get("/", (req, res) => {
