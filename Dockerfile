@@ -10,4 +10,8 @@ RUN npm install
 
 COPY . .
 
-CMD [ "npm", "start" ]
+# Adding a wait tool to allow a more fool-proof load
+ADD https://github.com/ufoscout/docker-compose-wait/releases/download/2.2.1/wait /wait
+RUN chmod +x /wait
+
+CMD /wait && npm start

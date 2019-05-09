@@ -1,3 +1,5 @@
+require("dotenv").config()
+
 // Requiring Middleware
 const express = require("express")
 const exphbs = require("express-handlebars")
